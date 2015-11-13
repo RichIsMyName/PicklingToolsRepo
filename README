@@ -1,4 +1,4 @@
-Pickling Tools (version 1.6.0):
+Pickling Tools (version 1.6.1):
 
 This distribution contains tools to allow you to exchange information
 between C++ and Python and Java.  You can either exchange data between systems
@@ -11,5 +11,5 @@ Pickling is Python name for serialized data.
 
 
 See the Documentation at http://www.picklingtools.com
-or under PicklingTools160Release/Docs
+or under PicklingTools161Release/Docs
 

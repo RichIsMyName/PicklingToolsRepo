@@ -12,10 +12,10 @@ The basic build should be straight-forward:
 
   # Csh commands
   % cd <dir>
-  % cp -r PicklingTools160/Xm/ptools160 .
+  % cp -r PicklingTools161/Xm/ptools161 .
 
   ! X-Midas command inside of X-Midas shell
-  > xmopt ptools /new/all/lower/case/path/ptools160
+  > xmopt ptools /new/all/lower/case/path/ptools161
   > xmp +ptools
   > xmbopt ptools
 
@@ -27,12 +27,12 @@ libraries.cfg to see how we built everything.
 Again, all the files in the inc and lib directories are copies of
 files from the rest of the distribution (in particular, the inc/oc is
 (mostly) just a copy of the
-   PicklingTools160/C++/opencontainers_1_8_0/include
+   PicklingTools161/C++/opencontainers_1_8_2/include
 directory).
 
 
 NEW!!! If you wish to deliver a namespaced option tree, we suggest you
-change the name to nsptools160 because when namespaces are in place, ptools
+change the name to nsptools161 because when namespaces are in place, ptools
 compiles and links very differently (and in fact will not work as expected
 with old code).  You shouldn't HAVE to do this: the default configuration
 still namespaces everything and opens up the namespace, so all the link
@@ -43,21 +43,21 @@ To deliver a namespaced option tree:
 
   # Csh commands
   % cd <dir>
-  % cp -r PicklingTools160/Xm/ptools160 ./nsptools160    ## NOTICE NAME CHANGE!!
+  % cp -r PicklingTools161/Xm/ptools161 ./nsptools161    ## NOTICE NAME CHANGE!!
   
       EDIT nsptools152/inc/ocport.h and uncomment the line with:
        //  #define OC_FORCE_NAMESPACE
       By defining OC_FORCE_NAMESPACE, you force the user to deal the 
       OC namespace without a default 'using'
 
-      EDIT nsptools160/cfg/commands.cfg and change PTOOLS to NSPTOOLS
+      EDIT nsptools161/cfg/commands.cfg and change PTOOLS to NSPTOOLS
       EDIT all your .cfg files in your option trees and change 
          libdepend + *;ptools 
              to
          libdepend + *;nsptools 
      
   ! X-Midas command inside of X-Midas shell
-  > xmopt nsptools /new/all/lower/case/path/nsptools160
+  > xmopt nsptools /new/all/lower/case/path/nsptools161
   > xmp +nsptools
   > xmbopt nsptools
 

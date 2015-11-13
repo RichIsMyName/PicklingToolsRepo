@@ -1,4 +1,18 @@
 
+New Features as of version 1.6.1
+
+  November 2015
+
+  This is just a bug-fix release.  A minor change to fix
+  the FixedSizeAllocator to work with cross process shared memory
+
+  C++:  Updated to opencontainers_1_8_2
+   * Updated ocstreamingpool.cc so it specifically requests a 
+     FixedSizeAllocator to work in cross process shared memory
+   * Updated FixedSizeAllocator so you can request the lock (used
+     to ensure thread-safety) to work in cross process shared memory
+
+
 New Features as of version 1.6.0
 
   August 2015

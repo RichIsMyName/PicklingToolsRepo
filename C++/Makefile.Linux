@@ -7,7 +7,7 @@ CC = g++
 # *****CAREFUL! g++ 4.5.1 20100924 DOES NOT WORK with Ptools and -O.  You must
 # compile without optimization for that compiler to work
 
-OC = ./opencontainers_1_8_1
+OC = ./opencontainers_1_8_2
 OCINC = $(OC)/include
 
 CFLAGS = -Wall -Wextra -fpic -O -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -Wno-deprecated -I$(OCINC) -pthread -D_REENTRANT

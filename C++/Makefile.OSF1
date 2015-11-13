@@ -1,7 +1,7 @@
 
 CC = cxx 
 
-CFLAGS = -Wall  -fpic -O -DOSF1_ -DOC_NEW_STYLE_INCLUDES -I./opencontainers_1_8_1/include -pthread -tlocal
+CFLAGS = -Wall  -fpic -O -DOSF1_ -DOC_NEW_STYLE_INCLUDES -I./opencontainers_1_8_2/include -pthread -tlocal
 CCFLAGS = -pthread -tlocal -lm
 
 COM_OBJS = m2pythontools.o valpython.o midassocket.o valprotocol2.o m2ser.o m2streamdataenc.o m2convertrep.o timeconv.o

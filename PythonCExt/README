@@ -32,7 +32,7 @@ The pyocer module has the following routines:
  (1) Check 'setup.py':
 
      Make sure it includes the paths to the code in
-     `PicklingTools155/C++` and `PicklingTools155/C++/opencontainers1_8_1/include`
+     `PicklingTools161/C++` and `PicklingTools161/C++/opencontainers1_8_2/include`
      (of course, the version numbers may change in later releases).
 
      By default, this should work, but these are relative paths from
@@ -52,15 +52,15 @@ The pyocer module has the following routines:
         building 'pyobjconvertmodule' extension
         creating build
         creating build/temp.linux-x86_64-2.6
-        gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I../C++ -I../C++/opencontainers_1_8_1/include -I/usr/include/python2.6 -c pyobjconvertmodule.cc -o build/temp.linux-x86_64-2.6/pyobjconvertmodule.o
-        gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I../C++ -I../C++/opencontainers_1_8_1/include -I/usr/include/python2.6 -c pyobjconverter.cc -o build/temp.linux-x86_64-2.6/pyobjconverter.o
+        gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I../C++ -I../C++/opencontainers_1_8_2/include -I/usr/include/python2.6 -c pyobjconvertmodule.cc -o build/temp.linux-x86_64-2.6/pyobjconvertmodule.o
+        gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I../C++ -I../C++/opencontainers_1_8_2/include -I/usr/include/python2.6 -c pyobjconverter.cc -o build/temp.linux-x86_64-2.6/pyobjconverter.o
         creating build/lib.linux-x86_64-2.6
         g++ -pthread -shared build/temp.linux-x86_64-2.6/pyobjconvertmodule.o build/temp.linux-x86_64-2.6/pyobjconverter.o -L/usr/lib64 -lpython2.6 -o build/lib.linux-x86_64-2.6/pyobjconvertmodule.so
         running build
         running build_ext
         building 'pyocsermodule' extension
-        gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I../C++ -I../C++/opencontainers_1_8_1/include -I/usr/include/python2.6 -c pyocsermodule.cc -o build/temp.linux-x86_64-2.6/pyocsermodule.o
-        gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I../C++ -I../C++/opencontainers_1_8_1/include -I/usr/include/python2.6 -c pyocser.cc -o build/temp.linux-x86_64-2.6/pyocser.o
+        gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I../C++ -I../C++/opencontainers_1_8_2/include -I/usr/include/python2.6 -c pyocsermodule.cc -o build/temp.linux-x86_64-2.6/pyocsermodule.o
+        gcc -pthread -fno-strict-aliasing -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -DNDEBUG -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I../C++ -I../C++/opencontainers_1_8_2/include -I/usr/include/python2.6 -c pyocser.cc -o build/temp.linux-x86_64-2.6/pyocser.o
 g++ -pthread -shared build/temp.linux-x86_64-2.6/pyocsermodule.o build/temp.linux-x86_64-2.6/pyocser.o -L/usr/lib64 -lpython2.6 -o build/lib.linux-x86_64-2.6/pyocsermodule.so
 
  (3) Underneath PythonCExt should be three new subdirs with names "something" like below::
@@ -84,7 +84,7 @@ g++ -pthread -shared build/temp.linux-x86_64-2.6/pyocsermodule.o build/temp.linu
 
  (4) Set your PYTHONPATH so it picks up the .so when you import::
 
-       % setenv PYTHONPATH "/full/path/to/PicklingTools155/PythonCExt/build/lib.linux-x86_64-2.6"
+       % setenv PYTHONPATH "/full/path/to/PicklingTools161/PythonCExt/build/lib.linux-x86_64-2.6"
 
        % python
        >>> import pyobjconvert  # without PYTHONPATH, it probably won't find your .so
